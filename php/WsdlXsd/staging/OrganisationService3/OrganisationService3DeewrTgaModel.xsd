@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/Deewr.Tga.Model">
+  <xs:simpleType name="ScopeDecisionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Granted"/>
+      <xs:enumeration value="Refused"/>
+      <xs:enumeration value="Suspended"/>
+      <xs:enumeration value="Cancelled"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ScopeDecisionType" nillable="true" type="tns:ScopeDecisionType"/>
+</xs:schema>
